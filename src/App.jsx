@@ -6,7 +6,7 @@ function App() {
             <div>
                 <h1>First React application</h1>
                 <ProfileCard
-                    name="Cristian Camilo"
+                    name="ALEXANDRA KEDJU"
                     role="Full stack Software Developer"
                 />
             </div>
