@@ -1,23 +1,29 @@
 .profile-card {
     width: 350px;
-    background: white;
-    border-radius: 20px;
     padding: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .profile-image {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
+    object-fit: cover;
+}
+
+.role {
+    color: #666;
+    margin-bottom: 20px;
 }
 
 .skills {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 .skill {
@@ -25,4 +31,23 @@
     color: white;
     padding: 6px 12px;
     border-radius: 20px;
+    font-size: 14px;
+}
+
+.status-container {
+    margin: 20px 0;
+}
+
+.status-button {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.status-button:hover {
+    transform: scale(1.05);
 }

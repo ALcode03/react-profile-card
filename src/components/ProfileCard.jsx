@@ -1,6 +1,14 @@
+import { useState } from "react";
 import "../styles/ProfileCard.css";
 
 function ProfileCard(props) {
+
+    const [available, setAvailable] = useState(true);
+
+    const handleChangesStatus = () => {
+        setAvailable(!available);
+    };
+
     return (
         <div className="profile-card">
 
@@ -11,7 +19,7 @@ function ProfileCard(props) {
             />
 
             <h2>{props.name}</h2>
-            <p>{props.role}</p>
+            <p className="role">{props.role}</p>
 
             <div className="skills">
                 <span className="skill">React.js</span>
@@ -19,6 +27,22 @@ function ProfileCard(props) {
                 <span className="skill">HTML</span>
                 <span className="skill">CSS</span>
             </div>
+
+            <div className="status-container">
+                <p>
+                    Status:
+                    <strong>
+                        {available ? " Available" : " Busy"}
+                    </strong>
+                </p>
+            </div>
+
+            <button
+                className="status-button"
+                onClick={handleChangesStatus}
+            >
+                Change Status
+            </button>
         </div>
     );
 }
