@@ -1,4 +1,5 @@
 import ProfileCard from "./components/ProfileCard";
+import SkillsList from "./components/SkillsList";
 
 function App() {
     return (
@@ -9,6 +10,7 @@ function App() {
                     name="ALEXANDRA KEDJU"
                     role="Full stack Software Developer"
                 />
+                <SkillsList/>
             </div>
         </>
     );
